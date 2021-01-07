@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/calculadora.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Calculadora JS</title>
+</head>
+<body>
+<header class="header">
+    <div class="logo-header">
+        <picture>
+            <source media="(max-width:900px)" srcset="img/logo-small.png">
+            <img src="img/logo.png" alt="Curso de JS">
+        </picture>
+    </div>
+    <div class="menu-header">
+        <nav>
+            <a href="https://www.javascript.com/try" target="_blank" >Tentar Javascript</a>
+            <a href="https://www.javascript.com/learn/strings" target="_blank">Aprender</a>
+            <a href="https://www.javascript.com/resources" target="_blank">Recursos</a>
+            <a href="https://www.javascript.com/about" target="_blank">Sobre</a>
+        </nav>
+    </div>
+</header>
+<section class="calculadora-section">
+    <h1>Calculadora JS</h1>
+    <div class="calculadora-container">
+        <div class="calculadora-visor">
+            <span class="calculadora-visor-historico"></span>
+            <span class="calculadora-visor-texto" id="">0</span>
+        </div>
+        <div class="calculadora-btn-container">
+            <div class="calculadora-btn calc-%" onclick="calculadora('funcao-%')">%</div>
+            <div class="calculadora-btn calc-ce" onclick="calculadora('funcao-ce')">CE</div>
+            <div class="calculadora-btn calc-c" onclick="calculadora('funcao-c')">C</div>
+            <div class="calculadora-btn calc-apagar" onclick="calculadora('funcao-backspace');"><i class="fas fa-backspace"></i></div>
+            <div class="calculadora-btn calc-1/X" onclick="calculadora('funcao-inverso');">1/x</div>
+            <div class="calculadora-btn calc-quadrado" onclick="calculadora('funcao-backspace');">x²</div>
+            <div class="calculadora-btn calc-quadrado" onclick="calculadora('funcao-backspace');"><i class="fas fa-square-root-alt"></i></div>
+            <div class="calculadora-btn calc-divisao" onclick="calculadora('operacao÷');"><i class="fas fa-divide"></i></div>
+            <div class="calculadora-btn calc-7" onclick="calculadora(7);">7</div>
+            <div class="calculadora-btn calc-8" onclick="calculadora(8);">8</div>
+            <div class="calculadora-btn calc-9" onclick="calculadora(9);">9</div>
+            <div class="calculadora-btn calc-multiplicacao" onclick="calculadora('operacao×');">X</div>
+            <div class="calculadora-btn calc-4" onclick="calculadora(4);">4</div>
+            <div class="calculadora-btn calc-5" onclick="calculadora(5);">5</div>
+            <div class="calculadora-btn calc-6" onclick="calculadora(6);">6</div>
+            <div class="calculadora-btn calc-subracao" onclick="calculadora('operacao-');">-</div>
+            <div class="calculadora-btn calc-1" onclick="calculadora(1);">1</div>
+            <div class="calculadora-btn calc-2" onclick="calculadora(2);">2</div>
+            <div class="calculadora-btn calc-3" onclick="calculadora(3);">3</div>
+            <div class="calculadora-btn calc-soma" onclick="calculadora('operacao+');">+</div>
+            <div class="calculadora-btn calc-inverso" onclick="calculadora('funcao-inverte_sinal');">-(1)</div>
+            <div class="calculadora-btn calc-0" onclick="calculadora(0);">0</div>
+            <div class="calculadora-btn calc-virtgula">,</div>
+            <div class="calculadora-btn calc-resultado" onclick="calculadora('funcao-resultado')">=</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
